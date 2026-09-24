@@ -165,3 +165,31 @@ a { color: var(--primary); }
 .af-login-card .af-btn { width: 100%; padding: 8px; font-size: var(--fs-sm); }
 .af-login-msg { font-size: var(--fs-xs); color: var(--warn-tx); min-height: 1.3em; text-align: center; }
 .af-login-note { font-size: var(--fs-caption); color: var(--sub); text-align: center; }
+
+/* ── 发布对话框（admin/publish.js）── */
+.af-dlg-backdrop {
+  position: fixed; inset: 0; z-index: 90; background: rgba(0, 0, 0, .38);
+  display: flex; align-items: center; justify-content: center;
+}
+.af-dlg {
+  width: min(480px, 92vw); max-height: 84vh; overflow: auto;
+  background: var(--card); border: 1px solid var(--border); border-radius: var(--r-md);
+  box-shadow: var(--shadow); padding: 18px 20px;
+}
+.af-dlg h4 { margin: 0 0 var(--sp-5); font-size: var(--fs-md); }
+.af-dlg-body { display: flex; flex-direction: column; gap: var(--sp-4); }
+.af-dlg-row { display: flex; flex-direction: column; gap: 4px; }
+.af-dlg-row label { font-size: var(--fs-xs); color: var(--sub); }
+.af-dlg-row input, .af-dlg-row textarea {
+  font-family: inherit; font-size: var(--fs-sm); padding: 7px 10px;
+  border: 1px solid var(--border); border-radius: var(--r-sm); background: var(--bg); color: var(--text);
+  resize: vertical;
+}
+.af-dlg-row input:focus, .af-dlg-row textarea:focus { outline: none; border-color: var(--primary); }
+.af-dlg-files {
+  max-height: 180px; overflow: auto; border: 1px solid var(--border); border-radius: var(--r-sm);
+  padding: 6px 12px; font-size: var(--fs-xs); background: var(--bg);
+}
+.af-dlg-files ul { margin: 4px 0; padding-left: 18px; }
+.af-dlg-tip { font-size: var(--fs-caption); color: var(--sub); line-height: 1.6; }
+.af-dlg-acts { display: flex; gap: var(--sp-4); justify-content: flex-end; margin-top: var(--sp-5); }

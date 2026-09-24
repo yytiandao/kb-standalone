@@ -10,15 +10,33 @@ admin 后台、维护脚本保留在仓库里但**不会出现在线上**（Acti
 1. 仓库 **Settings → Pages → Build and deployment → Source** 选 **GitHub Actions**
 2. 之后每次 push 到 main，Actions 自动构建发布，约 2 分钟上线
 
-## 日常发版流程
+## 日常发版：两种方式
+
+### 方式一：线上后台直接发布（推荐，随时随地在浏览器里完成）
+
+1. 打开 `https://yytiandao.github.io/kb-standalone/admin.html`，登录后台
+2. 首次使用点顶栏「发布设置」填 GitHub Token（建议 fine-grained PAT：
+   只勾选本仓库、权限只给 **Contents: Read and write**；只存本机浏览器）
+3. 改内容 → 点「发布上线」→ 走与导出同一道校验门禁 → 确认提交
+4. 提交即进 main，Actions 自动构建，约 2 分钟后线上生效
+
+注意：线上发布后本地仓库落后一个提交，**本地改之前先 `git pull`**。
+
+### 方式二：本地改文件推送（大改动 / 需要跑本地校验时）
 
 ```
 1. 本地改数据 / 内容（data/*.js 或 admin 后台导出替换）
 2. node content-check.js          # 内容门禁，必须全绿
-3. sw.js 里 CACHE 版本号 +1       # 如 struct-kb-v30 → v31，保证老用户缓存刷新
+3. sw.js 里 CACHE 版本号 +1       # 仅改了 index/app/sw 等站点文件时需要；纯数据不用（network-first 自动取新）
 4. git add -A && git commit -m "…" && git push
 5. 等 Actions 跑完，强刷浏览器（Ctrl+F5）验证
 ```
+
+### Actions 构建失败怎么办
+
+线上发布已过后台校验，Actions 仍失败（如资源检查）时：main 上留着坏提交，
+去仓库 Actions 页看日志，用 admin 再改一次发布修复，或在 GitHub 网页上
+revert 那个提交即可——线上站点不会更新坏内容（发布失败就不部署）。
 
 ## 后台登录（admin.html）
 
@@ -41,7 +59,8 @@ node admin/set-auth.js --del <用户名>     # 删除账号
 - [ ] 浏览器地址栏「安装应用」可用（PWA：manifest + sw.js 已内置，HTTPS 下自动具备）
 - [ ] STEP 成本评估模块能加载（vendor/occt 的 7.6MB wasm 正常拉取）
 - [ ] 断网后仍能打开（Service Worker 离线缓存）
-- [ ] `https://yytiandao.github.io/kb-standalone/admin.html` 返回 404（后台不在线上）
+- [ ] `https://yytiandao.github.io/kb-standalone/admin.html` 打开是登录门（后台已上线，未登录看不到界面；搜索引擎不收录）
+- [ ] 线上后台改一条内容 → 发布上线 → 约 2 分钟后前台强刷可见
 - [ ] 打印预览页脚二维码扫码能打开站点（images/qr-site.svg 指向本站地址）
 
 ## 换域名 / 换托管平台（将来如需）

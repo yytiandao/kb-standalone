@@ -13,8 +13,10 @@
  *   · data/img.js 引用的图片文件存在（含缩略图）
  *   · manifest.webmanifest 的图标存在
  *
- * build 的生产目录排除：admin.html、admin/、core/（仅后台用）、维护脚本、
- * deploy/ 与 README.md（仓库文档）、本地说明文档、点开头文件（.nojekyll 除外）。
+ * build 的生产目录排除：维护脚本、deploy/ 与 README.md（仓库文档）、
+ * 本地说明文档、点开头文件（.nojekyll 除外）。
+ * admin.html / admin/ / core/ 会进 dist —— 后台部署在线上（登录门禁 +
+ * PAT 才能写），exportFiles 生成的数据文件也由它在线发布。
  * standards/ 子站（424MB，主站无链接）默认不复制，需要时自行同步。
  * ══════════════════════════════════════════════════════════════════════ */
 const fs = require('fs');
@@ -124,7 +126,6 @@ function runCheck() {
 
 /* ── 构建 dist/ ── */
 const EXCLUDE = new Set([
-  'admin.html', 'admin', 'core',                      // 后台与仅后台用的框架层
   'content-check.js', 'qa-check.js', 'release.js', 'serve.js',   // 维护脚本
   'deploy',                                            // 部署文档，不进线上
   'README.md',                                         // 仓库说明，不进线上
