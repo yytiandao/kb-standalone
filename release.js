@@ -129,6 +129,7 @@ const EXCLUDE = new Set([
   'content-check.js', 'qa-check.js', 'release.js', 'serve.js', 'kb.js',   // 维护脚本
   'AGENTS.md',                                         // 给 AI 工具的项目说明，不进线上
   'deploy',                                            // 部署文档，不进线上
+  'tools',                                             // 维护工具（图片查重等），不进线上
   'README.md',                                         // 仓库说明，不进线上
   '使用说明.txt', '功能测试用例.md', '功能测试用例.csv',   // 本地文档，不进线上
   'standards'                                           // 424MB 独立子站，另行同步

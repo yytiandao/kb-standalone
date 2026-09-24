@@ -1,0 +1,1431 @@
+{
+ "generated": "2026-09-24 19:28:17",
+ "thresholds": {
+  "d_cand": 20,
+  "m_B": 0.65,
+  "m_C": 0.5
+ },
+ "bad": [],
+ "groups": [
+  {
+   "id": 1,
+   "type": "B",
+   "keep": "images/ref/005_1.jpg",
+   "members": [
+    {
+     "f": "images/ref/005_1.jpg",
+     "md5": "bfef9af9358c3bcdc9424173410add7b",
+     "hash": 2954361424973500432,
+     "w": 400,
+     "h": 264,
+     "bytes": 14458,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/ref/005_2.jpg",
+     "md5": "360e8cadf1d101c6d4da5d620dd9bf63",
+     "hash": 2954361424973500432,
+     "w": 400,
+     "h": 263,
+     "bytes": 14111,
+     "scope": "ref",
+     "dist": 0,
+     "m": 0.999
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "A",
+   "keep": "images/ref/009_1.jpg",
+   "members": [
+    {
+     "f": "images/ref/009_1.jpg",
+     "md5": "41270d7b79d2d013391a38b7e0cdde41",
+     "hash": 5274041964776587521,
+     "w": 600,
+     "h": 400,
+     "bytes": 49323,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/ref/021_3.jpg",
+     "md5": "41270d7b79d2d013391a38b7e0cdde41",
+     "hash": 5274041964776587521,
+     "w": 600,
+     "h": 400,
+     "bytes": 49323,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "B",
+   "keep": "images/ref/019_1.jpg",
+   "members": [
+    {
+     "f": "images/ref/019_1.jpg",
+     "md5": "48e4c0a1dd9b837f5d28cf11329ab351",
+     "hash": 2700279487170037616,
+     "w": 400,
+     "h": 284,
+     "bytes": 21641,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/ref/019_3.jpg",
+     "md5": "1cd0c8e7dcd256dbeda95c14c8d2d70d",
+     "hash": 2700279487035819876,
+     "w": 310,
+     "h": 220,
+     "bytes": 13952,
+     "scope": "ref",
+     "dist": 3,
+     "m": 0.959
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "A",
+   "keep": "images/ref/030_3.jpg",
+   "members": [
+    {
+     "f": "images/ref/030_3.jpg",
+     "md5": "6fa1065ccc34da33ec5ee03e042f91d3",
+     "hash": 8246710162622134882,
+     "w": 400,
+     "h": 328,
+     "bytes": 13837,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/ref/033_2.jpg",
+     "md5": "6fa1065ccc34da33ec5ee03e042f91d3",
+     "hash": 8246710162622134882,
+     "w": 400,
+     "h": 328,
+     "bytes": 13837,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "B",
+   "keep": "images/ref/038_3.jpg",
+   "members": [
+    {
+     "f": "images/ref/038_1.jpg",
+     "md5": "f24e7a2da1f1c64ff362db2694ed382f",
+     "hash": 14181429278274268325,
+     "w": 567,
+     "h": 273,
+     "bytes": 18358,
+     "scope": "ref",
+     "dist": 1,
+     "m": 0.973
+    },
+    {
+     "f": "images/ref/038_2.jpg",
+     "md5": "ff9b4c038c53325c616568fc97162f3f",
+     "hash": 14323608368173599910,
+     "w": 588,
+     "h": 288,
+     "bytes": 21761,
+     "scope": "ref",
+     "dist": 13,
+     "m": 0.699
+    },
+    {
+     "f": "images/ref/038_3.jpg",
+     "md5": "ffc6df2492f0d7079bd29f26fa17b179",
+     "hash": 14181429278274260133,
+     "w": 620,
+     "h": 303,
+     "bytes": 21937,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "type": "B",
+   "keep": "images/ref/082_1.jpg",
+   "members": [
+    {
+     "f": "images/ref/082_1.jpg",
+     "md5": "97dde38991efeb96fbd1be3bd9281950",
+     "hash": 16318323029589758667,
+     "w": 900,
+     "h": 411,
+     "bytes": 21092,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/ref/082_2.jpg",
+     "md5": "d80dd53db2bb171f0651ccecabf3da87",
+     "hash": 16318323029589766859,
+     "w": 660,
+     "h": 302,
+     "bytes": 13466,
+     "scope": "ref",
+     "dist": 1,
+     "m": 0.792
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "type": "B",
+   "keep": "images/ref/170_2.jpg",
+   "members": [
+    {
+     "f": "images/ref/099_1.jpg",
+     "md5": "5ee0c4db5a625ec6198f37333070a5bf",
+     "hash": 1766685176553195033,
+     "w": 400,
+     "h": 400,
+     "bytes": 22510,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/ref/170_2.jpg",
+     "md5": "e6c4fc1ed16a7cd689989cc7201757b0",
+     "hash": 1766685176553195033,
+     "w": 400,
+     "h": 400,
+     "bytes": 22637,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/plus04.jpg",
+     "md5": "e6c4fc1ed16a7cd689989cc7201757b0",
+     "hash": 1766685176553195033,
+     "w": 400,
+     "h": 400,
+     "bytes": 22637,
+     "scope": "img",
+     "dist": 0,
+     "m": 1.0
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "type": "B",
+   "keep": "images/ref/170_3.jpg",
+   "members": [
+    {
+     "f": "images/ref/099_2.jpg",
+     "md5": "a10bbc709f3cf8395d8b8945927e8f20",
+     "hash": 14049535157546836294,
+     "w": 750,
+     "h": 750,
+     "bytes": 50029,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/ref/170_3.jpg",
+     "md5": "6cbae56f6793cfba9a44ecf4ac1321d5",
+     "hash": 14049535157546836294,
+     "w": 750,
+     "h": 750,
+     "bytes": 50142,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "type": "B",
+   "keep": "images/ref/196_1.jpg",
+   "members": [
+    {
+     "f": "images/ref/102_2.jpg",
+     "md5": "ac2dbeb3a8fbee2886c87b684a09c4d5",
+     "hash": 14747715728162353265,
+     "w": 400,
+     "h": 319,
+     "bytes": 11726,
+     "scope": "ref",
+     "dist": 5,
+     "m": 0.73
+    },
+    {
+     "f": "images/ref/196_1.jpg",
+     "md5": "445411ccb270e93cc95b21bbc3ab0e00",
+     "hash": 14747706932102885593,
+     "w": 408,
+     "h": 326,
+     "bytes": 12986,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "type": "A",
+   "keep": "images/ref/102_3.jpg",
+   "members": [
+    {
+     "f": "images/ref/102_3.jpg",
+     "md5": "b1f7e7a82fda74f725bdea896b9d802c",
+     "hash": 15676030049125043417,
+     "w": 461,
+     "h": 280,
+     "bytes": 11667,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/plus30.jpg",
+     "md5": "b1f7e7a82fda74f725bdea896b9d802c",
+     "hash": 15676030049125043417,
+     "w": 461,
+     "h": 280,
+     "bytes": 11667,
+     "scope": "img",
+     "dist": 0,
+     "m": 1.0
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "type": "B",
+   "keep": "images/ref/103_2.jpg",
+   "members": [
+    {
+     "f": "images/ref/103_1.jpg",
+     "md5": "8fb64c133b9848255eeafaa973367ed5",
+     "hash": 14665580950112208591,
+     "w": 450,
+     "h": 391,
+     "bytes": 8511,
+     "scope": "ref",
+     "dist": 8,
+     "m": 0.754
+    },
+    {
+     "f": "images/ref/103_2.jpg",
+     "md5": "abc7a7d57eb29646be48c281fc03cfb3",
+     "hash": 14955377030821874895,
+     "w": 900,
+     "h": 572,
+     "bytes": 12996,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "type": "B",
+   "keep": "images/ref/167_1.jpg",
+   "members": [
+    {
+     "f": "images/ref/139_1.jpg",
+     "md5": "a826675bbb1a9055fef01caad124ec12",
+     "hash": 78013722818061619,
+     "w": 900,
+     "h": 675,
+     "bytes": 95029,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/ref/167_1.jpg",
+     "md5": "101fd706a6951f925a461319a8500221",
+     "hash": 78013722818061619,
+     "w": 900,
+     "h": 675,
+     "bytes": 95545,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/plus01.jpg",
+     "md5": "101fd706a6951f925a461319a8500221",
+     "hash": 78013722818061619,
+     "w": 900,
+     "h": 675,
+     "bytes": 95545,
+     "scope": "img",
+     "dist": 0,
+     "m": 1.0
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "type": "A",
+   "keep": "images/ref/168_1.jpg",
+   "members": [
+    {
+     "f": "images/ref/168_1.jpg",
+     "md5": "9483e85f3ae98741a48d1d9f7e1475fb",
+     "hash": 8156058647729807777,
+     "w": 833,
+     "h": 1009,
+     "bytes": 115760,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/plus02.jpg",
+     "md5": "9483e85f3ae98741a48d1d9f7e1475fb",
+     "hash": 8156058647729807777,
+     "w": 833,
+     "h": 1009,
+     "bytes": 115760,
+     "scope": "img",
+     "dist": 0,
+     "m": 1.0
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "type": "A",
+   "keep": "images/ref/169_1.jpg",
+   "members": [
+    {
+     "f": "images/ref/169_1.jpg",
+     "md5": "6e0c6e89938965cef38122a6180b79b7",
+     "hash": 474172745766771096,
+     "w": 400,
+     "h": 379,
+     "bytes": 36683,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/plus03.jpg",
+     "md5": "6e0c6e89938965cef38122a6180b79b7",
+     "hash": 474172745766771096,
+     "w": 400,
+     "h": 379,
+     "bytes": 36683,
+     "scope": "img",
+     "dist": 0,
+     "m": 1.0
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "type": "A",
+   "keep": "images/ref/171_3.jpg",
+   "members": [
+    {
+     "f": "images/ref/171_3.jpg",
+     "md5": "26e61e347759925edbca7f0f355b2016",
+     "hash": 5723413406178918592,
+     "w": 400,
+     "h": 378,
+     "bytes": 21203,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/plus05.jpg",
+     "md5": "26e61e347759925edbca7f0f355b2016",
+     "hash": 5723413406178918592,
+     "w": 400,
+     "h": 378,
+     "bytes": 21203,
+     "scope": "img",
+     "dist": 0,
+     "m": 1.0
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "type": "A",
+   "keep": "images/ref/172_1.jpg",
+   "members": [
+    {
+     "f": "images/ref/172_1.jpg",
+     "md5": "fe4ca500216bd6c44dc6926bd560e3e9",
+     "hash": 10869680234457489700,
+     "w": 726,
+     "h": 450,
+     "bytes": 19389,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/plus06.jpg",
+     "md5": "fe4ca500216bd6c44dc6926bd560e3e9",
+     "hash": 10869680234457489700,
+     "w": 726,
+     "h": 450,
+     "bytes": 19389,
+     "scope": "img",
+     "dist": 0,
+     "m": 1.0
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "type": "A",
+   "keep": "images/ref/175_1.jpg",
+   "members": [
+    {
+     "f": "images/ref/175_1.jpg",
+     "md5": "b547a2a1d2fddee99db11f3aca650f8b",
+     "hash": 9333095269043189489,
+     "w": 500,
+     "h": 500,
+     "bytes": 23857,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/plus09.jpg",
+     "md5": "b547a2a1d2fddee99db11f3aca650f8b",
+     "hash": 9333095269043189489,
+     "w": 500,
+     "h": 500,
+     "bytes": 23857,
+     "scope": "img",
+     "dist": 0,
+     "m": 1.0
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "type": "A",
+   "keep": "images/ref/180_3.jpg",
+   "members": [
+    {
+     "f": "images/ref/180_3.jpg",
+     "md5": "194ba2d426da95856d7105ae38976ec4",
+     "hash": 14316042633461165292,
+     "w": 800,
+     "h": 967,
+     "bytes": 85112,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/plus14.jpg",
+     "md5": "194ba2d426da95856d7105ae38976ec4",
+     "hash": 14316042633461165292,
+     "w": 800,
+     "h": 967,
+     "bytes": 85112,
+     "scope": "img",
+     "dist": 0,
+     "m": 1.0
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "type": "A",
+   "keep": "images/ref/182_2.jpg",
+   "members": [
+    {
+     "f": "images/ref/182_2.jpg",
+     "md5": "1813f298c2210a4b29659c12d1a06ed8",
+     "hash": 10998382146873748200,
+     "w": 400,
+     "h": 343,
+     "bytes": 28160,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/plus16.jpg",
+     "md5": "1813f298c2210a4b29659c12d1a06ed8",
+     "hash": 10998382146873748200,
+     "w": 400,
+     "h": 343,
+     "bytes": 28160,
+     "scope": "img",
+     "dist": 0,
+     "m": 1.0
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "type": "A",
+   "keep": "images/ref/183_1.jpg",
+   "members": [
+    {
+     "f": "images/ref/183_1.jpg",
+     "md5": "9109d412272763ebe185c5041e216ecb",
+     "hash": 12753418665629889598,
+     "w": 400,
+     "h": 400,
+     "bytes": 11865,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/plus17.jpg",
+     "md5": "9109d412272763ebe185c5041e216ecb",
+     "hash": 12753418665629889598,
+     "w": 400,
+     "h": 400,
+     "bytes": 11865,
+     "scope": "img",
+     "dist": 0,
+     "m": 1.0
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "type": "A",
+   "keep": "images/ref/188_1.jpg",
+   "members": [
+    {
+     "f": "images/ref/188_1.jpg",
+     "md5": "dd110823bb6e2c57fa33af8d525c693c",
+     "hash": 14716940363404505457,
+     "w": 750,
+     "h": 1169,
+     "bytes": 46684,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/plus22.jpg",
+     "md5": "dd110823bb6e2c57fa33af8d525c693c",
+     "hash": 14716940363404505457,
+     "w": 750,
+     "h": 1169,
+     "bytes": 46684,
+     "scope": "img",
+     "dist": 0,
+     "m": 1.0
+    }
+   ]
+  },
+  {
+   "id": 22,
+   "type": "A",
+   "keep": "images/ref/189_1.jpg",
+   "members": [
+    {
+     "f": "images/ref/189_1.jpg",
+     "md5": "837a551520e5975c885cd3c6d5daf776",
+     "hash": 5336769486752094360,
+     "w": 500,
+     "h": 500,
+     "bytes": 27988,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/plus23.jpg",
+     "md5": "837a551520e5975c885cd3c6d5daf776",
+     "hash": 5336769486752094360,
+     "w": 500,
+     "h": 500,
+     "bytes": 27988,
+     "scope": "img",
+     "dist": 0,
+     "m": 1.0
+    }
+   ]
+  },
+  {
+   "id": 23,
+   "type": "A",
+   "keep": "images/ref/191_1.jpg",
+   "members": [
+    {
+     "f": "images/ref/191_1.jpg",
+     "md5": "945cbf14a0f89da34c47d6b88a564c13",
+     "hash": 10375968719300050119,
+     "w": 790,
+     "h": 1153,
+     "bytes": 55421,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/ref/191_3.jpg",
+     "md5": "945cbf14a0f89da34c47d6b88a564c13",
+     "hash": 10375968719300050119,
+     "w": 790,
+     "h": 1153,
+     "bytes": 55421,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    }
+   ]
+  },
+  {
+   "id": 24,
+   "type": "A",
+   "keep": "images/ref/192_2.jpg",
+   "members": [
+    {
+     "f": "images/ref/192_2.jpg",
+     "md5": "48085740fd4e02699d40332075d533be",
+     "hash": 7405754824979809932,
+     "w": 900,
+     "h": 908,
+     "bytes": 66024,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/ref/192_3.jpg",
+     "md5": "48085740fd4e02699d40332075d533be",
+     "hash": 7405754824979809932,
+     "w": 900,
+     "h": 908,
+     "bytes": 66024,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    }
+   ]
+  },
+  {
+   "id": 25,
+   "type": "B",
+   "keep": "images/ref/204_2.jpg",
+   "members": [
+    {
+     "f": "images/ref/204_2.jpg",
+     "md5": "d431374b8a3ead171f06d371bbbd733f",
+     "hash": 13111303379357070453,
+     "w": 750,
+     "h": 600,
+     "bytes": 58485,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/ref/205_1.jpg",
+     "md5": "90bb74c46f69ad57dcd5879a61e13756",
+     "hash": 3816225592202016129,
+     "w": 750,
+     "h": 600,
+     "bytes": 54939,
+     "scope": "ref",
+     "dist": 12,
+     "m": 0.653
+    }
+   ]
+  },
+  {
+   "id": 26,
+   "type": "B",
+   "keep": "images/ref/214_1.jpg",
+   "members": [
+    {
+     "f": "images/ref/214_1.jpg",
+     "md5": "0ab9a0500e29053dec1daa88b584d0d1",
+     "hash": 3542591994971054706,
+     "w": 750,
+     "h": 748,
+     "bytes": 77562,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/plus51.jpg",
+     "md5": "b1b2ad1458b08681177ce480de95306c",
+     "hash": 3542591994971038322,
+     "w": 900,
+     "h": 563,
+     "bytes": 56133,
+     "scope": "img",
+     "dist": 1,
+     "m": 0.984
+    }
+   ]
+  },
+  {
+   "id": 27,
+   "type": "B",
+   "keep": "images/plus55.jpg",
+   "members": [
+    {
+     "f": "images/ref/215_1.jpg",
+     "md5": "2af74dab8272b584472440884aa2f5a9",
+     "hash": 10570989642718515859,
+     "w": 750,
+     "h": 511,
+     "bytes": 63543,
+     "scope": "ref",
+     "dist": 2,
+     "m": 0.981
+    },
+    {
+     "f": "images/plus55.jpg",
+     "md5": "90dcb622c47da28443a2ba9c4b739e60",
+     "hash": 12876832789371163283,
+     "w": 900,
+     "h": 563,
+     "bytes": 80513,
+     "scope": "img",
+     "dist": 0,
+     "m": 1.0
+    }
+   ]
+  },
+  {
+   "id": 28,
+   "type": "B",
+   "keep": "images/plus50.jpg",
+   "members": [
+    {
+     "f": "images/ref/221_1.jpg",
+     "md5": "ba8a6dac59b7f9308bd6ab4fbf2dc7ec",
+     "hash": 4285572284795193350,
+     "w": 640,
+     "h": 480,
+     "bytes": 46929,
+     "scope": "ref",
+     "dist": 3,
+     "m": 0.968
+    },
+    {
+     "f": "images/plus50.jpg",
+     "md5": "9f64f2c4e76e4fd3f27ebf705607a67c",
+     "hash": 13436886727612042246,
+     "w": 900,
+     "h": 563,
+     "bytes": 61660,
+     "scope": "img",
+     "dist": 0,
+     "m": 1.0
+    }
+   ]
+  },
+  {
+   "id": 29,
+   "type": "A",
+   "keep": "images/ref/223_1.jpg",
+   "members": [
+    {
+     "f": "images/ref/223_1.jpg",
+     "md5": "8296b6131a9d503e24498a41f391ced7",
+     "hash": 9409887299661070592,
+     "w": 351,
+     "h": 336,
+     "bytes": 16868,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/plus64.jpg",
+     "md5": "8296b6131a9d503e24498a41f391ced7",
+     "hash": 9409887299661070592,
+     "w": 351,
+     "h": 336,
+     "bytes": 16868,
+     "scope": "img",
+     "dist": 0,
+     "m": 1.0
+    }
+   ]
+  },
+  {
+   "id": 30,
+   "type": "A",
+   "keep": "images/ref/224_1.jpg",
+   "members": [
+    {
+     "f": "images/ref/224_1.jpg",
+     "md5": "4238140133f040e3109ee10473f0cd36",
+     "hash": 12817792868054909632,
+     "w": 521,
+     "h": 242,
+     "bytes": 22544,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/plus65.jpg",
+     "md5": "4238140133f040e3109ee10473f0cd36",
+     "hash": 12817792868054909632,
+     "w": 521,
+     "h": 242,
+     "bytes": 22544,
+     "scope": "img",
+     "dist": 0,
+     "m": 1.0
+    }
+   ]
+  },
+  {
+   "id": 31,
+   "type": "A",
+   "keep": "images/ref/225_1.jpg",
+   "members": [
+    {
+     "f": "images/ref/225_1.jpg",
+     "md5": "7449ff84d3aea8ef1e30717175bb4d04",
+     "hash": 6946360878866168313,
+     "w": 698,
+     "h": 354,
+     "bytes": 29778,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/plus66.jpg",
+     "md5": "7449ff84d3aea8ef1e30717175bb4d04",
+     "hash": 6946360878866168313,
+     "w": 698,
+     "h": 354,
+     "bytes": 29778,
+     "scope": "img",
+     "dist": 0,
+     "m": 1.0
+    }
+   ]
+  },
+  {
+   "id": 32,
+   "type": "A",
+   "keep": "images/ref/226_1.jpg",
+   "members": [
+    {
+     "f": "images/ref/226_1.jpg",
+     "md5": "8d02e5a5b4696271596f7510629b5c39",
+     "hash": 16244863226514780304,
+     "w": 523,
+     "h": 244,
+     "bytes": 15421,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/plus67.jpg",
+     "md5": "8d02e5a5b4696271596f7510629b5c39",
+     "hash": 16244863226514780304,
+     "w": 523,
+     "h": 244,
+     "bytes": 15421,
+     "scope": "img",
+     "dist": 0,
+     "m": 1.0
+    }
+   ]
+  },
+  {
+   "id": 33,
+   "type": "A",
+   "keep": "images/ref/227_1.jpg",
+   "members": [
+    {
+     "f": "images/ref/227_1.jpg",
+     "md5": "e7d15d4f95a463a8f02d6a97285909c5",
+     "hash": 14591089355806362571,
+     "w": 692,
+     "h": 333,
+     "bytes": 52030,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/plus68.jpg",
+     "md5": "e7d15d4f95a463a8f02d6a97285909c5",
+     "hash": 14591089355806362571,
+     "w": 692,
+     "h": 333,
+     "bytes": 52030,
+     "scope": "img",
+     "dist": 0,
+     "m": 1.0
+    }
+   ]
+  },
+  {
+   "id": 34,
+   "type": "A",
+   "keep": "images/ref/241_1.jpg",
+   "members": [
+    {
+     "f": "images/ref/241_1.jpg",
+     "md5": "3080473abd46562c98367c6e9aac1d91",
+     "hash": 9480576146575238296,
+     "w": 1287,
+     "h": 910,
+     "bytes": 182676,
+     "scope": "ref",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/plus69.jpg",
+     "md5": "3080473abd46562c98367c6e9aac1d91",
+     "hash": 9480576146575238296,
+     "w": 1287,
+     "h": 910,
+     "bytes": 182676,
+     "scope": "img",
+     "dist": 0,
+     "m": 1.0
+    }
+   ]
+  },
+  {
+   "id": 35,
+   "type": "A",
+   "keep": "images/rest13.jpg",
+   "members": [
+    {
+     "f": "images/rest13.jpg",
+     "md5": "9981c6ed4a29a9606d569039b92e5e4d",
+     "hash": 9882414576563600504,
+     "w": 900,
+     "h": 506,
+     "bytes": 53783,
+     "scope": "img",
+     "dist": 0,
+     "m": 1.0
+    },
+    {
+     "f": "images/rest95.jpg",
+     "md5": "9981c6ed4a29a9606d569039b92e5e4d",
+     "hash": 9882414576563600504,
+     "w": 900,
+     "h": 506,
+     "bytes": 53783,
+     "scope": "img",
+     "dist": 0,
+     "m": 1.0
+    }
+   ]
+  }
+ ],
+ "c_pairs": [
+  {
+   "a": "images/ref/080_1.jpg",
+   "b": "images/ref/092_3.jpg",
+   "d": 20,
+   "m": 0.638
+  },
+  {
+   "a": "images/ref/205_2.jpg",
+   "b": "images/ref/207_1.jpg",
+   "d": 20,
+   "m": 0.637
+  },
+  {
+   "a": "images/ref/102_1.jpg",
+   "b": "images/ref/102_2.jpg",
+   "d": 6,
+   "m": 0.635
+  },
+  {
+   "a": "images/ref/205_2.jpg",
+   "b": "images/ref/206_1.jpg",
+   "d": 20,
+   "m": 0.624
+  },
+  {
+   "a": "images/ref/090_1.jpg",
+   "b": "images/ref/182_3.jpg",
+   "d": 14,
+   "m": 0.622
+  },
+  {
+   "a": "images/ref/010_3.jpg",
+   "b": "images/ref/096_1.jpg",
+   "d": 19,
+   "m": 0.621
+  },
+  {
+   "a": "images/ref/103_2.jpg",
+   "b": "images/ref/103_3.jpg",
+   "d": 15,
+   "m": 0.62
+  },
+  {
+   "a": "images/ref/204_1.jpg",
+   "b": "images/ref/205_2.jpg",
+   "d": 19,
+   "m": 0.607
+  },
+  {
+   "a": "images/ref/104_1.jpg",
+   "b": "images/ref/196_2.jpg",
+   "d": 11,
+   "m": 0.584
+  },
+  {
+   "a": "images/ref/228_8.jpg",
+   "b": "images/plus07.jpg",
+   "d": 18,
+   "m": 0.574
+  },
+  {
+   "a": "images/ref/038_2.jpg",
+   "b": "images/ref/131_3.jpg",
+   "d": 18,
+   "m": 0.571
+  },
+  {
+   "a": "images/ref/204_1.jpg",
+   "b": "images/ref/206_1.jpg",
+   "d": 19,
+   "m": 0.568
+  },
+  {
+   "a": "images/ref/087_3.jpg",
+   "b": "images/plus25.jpg",
+   "d": 20,
+   "m": 0.564
+  },
+  {
+   "a": "images/ref/080_2.jpg",
+   "b": "images/ref/096_1.jpg",
+   "d": 6,
+   "m": 0.563
+  },
+  {
+   "a": "images/ref/194_3.jpg",
+   "b": "images/core13.jpg",
+   "d": 20,
+   "m": 0.561
+  },
+  {
+   "a": "images/ref/004_1.jpg",
+   "b": "images/ref/090_1.jpg",
+   "d": 19,
+   "m": 0.56
+  },
+  {
+   "a": "images/ref/204_3.jpg",
+   "b": "images/ref/205_2.jpg",
+   "d": 15,
+   "m": 0.559
+  },
+  {
+   "a": "images/ref/102_1.jpg",
+   "b": "images/ref/196_1.jpg",
+   "d": 3,
+   "m": 0.558
+  },
+  {
+   "a": "images/ref/018_1.jpg",
+   "b": "images/ref/018_2.jpg",
+   "d": 8,
+   "m": 0.556
+  },
+  {
+   "a": "images/ref/201_4.jpg",
+   "b": "images/ref/201_5.jpg",
+   "d": 12,
+   "m": 0.556
+  },
+  {
+   "a": "images/ref/090_1.jpg",
+   "b": "images/ref/174_3.jpg",
+   "d": 19,
+   "m": 0.55
+  },
+  {
+   "a": "images/ref/076_3.jpg",
+   "b": "images/ref/152_3.jpg",
+   "d": 17,
+   "m": 0.549
+  },
+  {
+   "a": "images/ref/230_1.jpg",
+   "b": "images/ref/230_2.jpg",
+   "d": 18,
+   "m": 0.547
+  },
+  {
+   "a": "images/ref/258_1.jpg",
+   "b": "images/ref/258_2.jpg",
+   "d": 19,
+   "m": 0.545
+  },
+  {
+   "a": "images/ref/229_1.jpg",
+   "b": "images/ref/231_1.jpg",
+   "d": 15,
+   "m": 0.544
+  },
+  {
+   "a": "images/ref/038_3.jpg",
+   "b": "images/ref/131_3.jpg",
+   "d": 15,
+   "m": 0.541
+  },
+  {
+   "a": "images/ref/259_1.jpg",
+   "b": "images/ref/259_2.jpg",
+   "d": 16,
+   "m": 0.541
+  },
+  {
+   "a": "images/ref/178_2.jpg",
+   "b": "images/ref/194_3.jpg",
+   "d": 14,
+   "m": 0.54
+  },
+  {
+   "a": "images/ref/038_1.jpg",
+   "b": "images/ref/131_3.jpg",
+   "d": 16,
+   "m": 0.538
+  },
+  {
+   "a": "images/ref/229_2.jpg",
+   "b": "images/ref/230_1.jpg",
+   "d": 18,
+   "m": 0.538
+  },
+  {
+   "a": "images/ref/092_1.jpg",
+   "b": "images/ref/092_3.jpg",
+   "d": 20,
+   "m": 0.535
+  },
+  {
+   "a": "images/ref/204_1.jpg",
+   "b": "images/ref/204_3.jpg",
+   "d": 16,
+   "m": 0.534
+  },
+  {
+   "a": "images/ref/090_3.jpg",
+   "b": "images/ref/092_1.jpg",
+   "d": 18,
+   "m": 0.533
+  },
+  {
+   "a": "images/ref/228_1.jpg",
+   "b": "images/ref/253_2.jpg",
+   "d": 17,
+   "m": 0.533
+  },
+  {
+   "a": "images/ref/226_2.jpg",
+   "b": "images/ref/244_1.jpg",
+   "d": 19,
+   "m": 0.532
+  },
+  {
+   "a": "images/ref/259_1.jpg",
+   "b": "images/ref/260_3.jpg",
+   "d": 18,
+   "m": 0.532
+  },
+  {
+   "a": "images/ref/092_3.jpg",
+   "b": "images/ref/247_1.jpg",
+   "d": 20,
+   "m": 0.53
+  },
+  {
+   "a": "images/ref/230_1.jpg",
+   "b": "images/ref/259_1.jpg",
+   "d": 16,
+   "m": 0.528
+  },
+  {
+   "a": "images/ref/173_2.jpg",
+   "b": "images/plus07.jpg",
+   "d": 17,
+   "m": 0.526
+  },
+  {
+   "a": "images/ref/258_1.jpg",
+   "b": "images/ref/259_1.jpg",
+   "d": 19,
+   "m": 0.523
+  },
+  {
+   "a": "images/ref/228_5.jpg",
+   "b": "images/ref/246_4.jpg",
+   "d": 17,
+   "m": 0.521
+  },
+  {
+   "a": "images/ref/227_2.jpg",
+   "b": "images/ref/228_5.jpg",
+   "d": 15,
+   "m": 0.52
+  },
+  {
+   "a": "images/ref/062_1.jpg",
+   "b": "images/ref/194_3.jpg",
+   "d": 15,
+   "m": 0.519
+  },
+  {
+   "a": "images/ref/171_2.jpg",
+   "b": "images/ref/173_2.jpg",
+   "d": 19,
+   "m": 0.518
+  },
+  {
+   "a": "images/ref/008_3.jpg",
+   "b": "images/ref/126_1.jpg",
+   "d": 19,
+   "m": 0.515
+  },
+  {
+   "a": "images/ref/066_2.jpg",
+   "b": "images/ref/099_2.jpg",
+   "d": 20,
+   "m": 0.513
+  },
+  {
+   "a": "images/ref/066_2.jpg",
+   "b": "images/ref/170_3.jpg",
+   "d": 20,
+   "m": 0.513
+  },
+  {
+   "a": "images/ref/045_1.jpg",
+   "b": "images/ref/096_1.jpg",
+   "d": 10,
+   "m": 0.511
+  },
+  {
+   "a": "images/ref/092_3.jpg",
+   "b": "images/plus26.jpg",
+   "d": 19,
+   "m": 0.511
+  },
+  {
+   "a": "images/ref/171_2.jpg",
+   "b": "images/plus25.jpg",
+   "d": 19,
+   "m": 0.511
+  },
+  {
+   "a": "images/ref/228_3.jpg",
+   "b": "images/ref/244_1.jpg",
+   "d": 19,
+   "m": 0.511
+  },
+  {
+   "a": "images/des16.jpg",
+   "b": "images/plus25.jpg",
+   "d": 20,
+   "m": 0.511
+  },
+  {
+   "a": "images/ref/074_1.jpg",
+   "b": "images/ref/131_3.jpg",
+   "d": 19,
+   "m": 0.509
+  },
+  {
+   "a": "images/ref/243_1.jpg",
+   "b": "images/ref/244_1.jpg",
+   "d": 16,
+   "m": 0.508
+  },
+  {
+   "a": "images/ref/224_2.jpg",
+   "b": "images/ref/227_2.jpg",
+   "d": 20,
+   "m": 0.507
+  },
+  {
+   "a": "images/ref/103_1.jpg",
+   "b": "images/core25.jpg",
+   "d": 19,
+   "m": 0.506
+  },
+  {
+   "a": "images/ref/103_2.jpg",
+   "b": "images/ref/194_3.jpg",
+   "d": 19,
+   "m": 0.505
+  },
+  {
+   "a": "images/ref/131_3.jpg",
+   "b": "images/ref/137_1.jpg",
+   "d": 20,
+   "m": 0.503
+  },
+  {
+   "a": "images/ref/050_2.jpg",
+   "b": "images/ref/183_2.jpg",
+   "d": 20,
+   "m": 0.501
+  },
+  {
+   "a": "images/ref/139_3.jpg",
+   "b": "images/ref/152_2.jpg",
+   "d": 20,
+   "m": 0.501
+  },
+  {
+   "a": "images/ref/183_2.jpg",
+   "b": "images/core13.jpg",
+   "d": 19,
+   "m": 0.501
+  }
+ ],
+ "orphans": [],
+ "multi_cat": [],
+ "missing_kbimg_refs": [],
+ "missing_item_imgs": []
+}

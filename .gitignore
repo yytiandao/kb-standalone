@@ -13,3 +13,7 @@ standards/
 # 系统杂项
 Thumbs.db
 .DS_Store
+
+# tools/img-dedupe 中间产物
+tools/img-dedupe/kbimg.json
+__pycache__/
