@@ -1,6 +1,6 @@
-/* proc.js —— 工艺分类框架
- * 由 data/manifest.js 登记；后台（admin.html）改内容后导出会整体重写本文件，手改也欢迎。
- * 包含的表: KB_PROC, KB_DIM, KB_CAT_DIMS */
+/* proc.js  —— 工艺分类框架
+ * 由 admin.html 导出生成；包含的表: KB_PROC, KB_DIM, KB_CAT_DIMS
+ * 手改也欢迎，格式就是 window.<表名> = <JSON>; */
 
 window.KB_PROC = [
  {
@@ -138,8 +138,6 @@ window.KB_DIM = [
  }
 ];
 
-/* 分类 → 维度的「预填建议」：新建条目时按分类给出初始维度（多值），
-   不再是渲染真值 —— 真值在 data/items.js 每条条目的 dims 上。 */
 window.KB_CAT_DIMS = {
  "mat": [
   "material"
@@ -226,4 +224,3 @@ window.KB_CAT_DIMS = {
   "constraint"
  ]
 };
-

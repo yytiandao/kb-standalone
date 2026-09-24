@@ -1,6 +1,6 @@
-/* cases.js —— 整机案例 与 DFM 检讨
- * 由 data/manifest.js 登记；后台（admin.html）改内容后导出会整体重写本文件，手改也欢迎。
- * 包含的表: KB_CASES, KB_CASE_DFM */
+/* cases.js  —— 整机案例 与 DFM 检讨
+ * 由 admin.html 导出生成；包含的表: KB_CASES, KB_CASE_DFM
+ * 手改也欢迎，格式就是 window.<表名> = <JSON>; */
 
 window.KB_CASES = [
  {

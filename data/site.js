@@ -1,6 +1,6 @@
-/* site.js —— 站点骨架：分类 / 领域 / 领域导读
- * 由 data/manifest.js 登记；后台（admin.html）改内容后导出会整体重写本文件，手改也欢迎。
- * 包含的表: KB_CATS, KB_DOMAINS, KB_DOMAIN_GUIDE */
+/* site.js  —— 站点骨架：分类 / 领域 / 领域导读
+ * 由 admin.html 导出生成；包含的表: KB_CATS, KB_DOMAINS, KB_DOMAIN_GUIDE
+ * 手改也欢迎，格式就是 window.<表名> = <JSON>; */
 
 window.KB_CATS = [
  {

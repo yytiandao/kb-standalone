@@ -1,10 +1,6 @@
-/* qa-meta.js —— 原理问答：领域清单
- * 由 data/manifest.js 登记；后台（admin.html）改内容后导出会整体重写本文件，手改也欢迎。
- * 包含的表: KB_QA_META
- *
- * n = 该领域题目数。题目本体在 data/qa-<id>.js 里按需加载（396KB，不进首屏），
- * 但导航角标「原理问答 432 问」要在首屏就显示真实数字，所以题数随这份清单立即加载。
- * 增删题目后记得同步 n —— 跑一次 node content-check.js 会直接报出哪个领域对不上。 */
+/* qa-meta.js  —— 原理问答：领域清单
+ * 由 admin.html 导出生成；包含的表: KB_QA_META
+ * 手改也欢迎，格式就是 window.<表名> = <JSON>; */
 
 window.KB_QA_META = [
  {
