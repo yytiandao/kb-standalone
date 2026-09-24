@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>内容管理 · 结构设计知识库</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<!-- 与主站共用同一套设计 token 与基础组件 -->
+<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="admin/admin.css">
+</head>
+<body class="af">
+
+<header class="af-top">
+  <div class="af-brand">内容管理<small id="afBackend"></small></div>
+  <div id="afDirty"></div>
+  <div class="af-acts">
+    <button class="af-btn af-ghost" id="afValidate">校验</button>
+    <button class="af-btn" id="afExport">导出改动</button>
+    <button class="af-btn af-ghost" id="afExportAll">导出全部</button>
+    <label class="af-btn af-ghost af-mi-btn">导入<input type="file" id="afImportFile" accept=".js,text/javascript" hidden></label>
+    <button class="af-btn af-danger" id="afDiscard">放弃改动</button>
+    <a class="af-btn af-ghost af-mi-btn" href="index.html">← 返回主站</a>
+  </div>
+</header>
+
+<div id="afBoot" style="padding:0 18px"></div>
+<div id="afConflict" style="padding:0 18px; display:none"></div>
+
+<main class="af-main">
+  <nav class="af-col af-col-tree" id="afTree" aria-label="内容类型"></nav>
+  <section class="af-col af-col-list">
+    <div id="afListHead"></div>
+    <div id="afQaDomains"></div>
+    <div id="afNote"></div>
+    <div id="afList"></div>
+  </section>
+  <section class="af-col af-col-form">
+    <div id="afFormHead"></div>
+    <div id="afForm"></div>
+  </section>
+</main>
+
+<div id="afProblems"><button id="afCloseProb" aria-label="关闭">×</button><div id="afProbBody"></div></div>
+
+<!-- ══ 数据层：与主站完全相同的数据文件（同一份内容，不是副本）══ -->
+<script src="data/site.js" defer></script>
+<script src="data/items.js" defer></script>
+<script src="data/items-side.js" defer></script>
+<script src="data/img.js" defer></script>
+<script src="data/syn.js" defer></script>
+<script src="data/proc.js" defer></script>
+<script src="data/gloss.js" defer></script>
+<script src="data/field.js" defer></script>
+<script src="data/tools.js" defer></script>
+<script src="data/formula.js" defer></script>
+<script src="data/cases.js" defer></script>
+<script src="data/select.js" defer></script>
+<script src="data/template.js" defer></script>
+<script src="data/map.js" defer></script>
+<script src="data/changelog.js" defer></script>
+<script src="data/qa-meta.js" defer></script>
+<script src="data/step.js" defer></script>
+<script src="data/qa-material.js" defer></script>
+<script src="data/qa-manufacturing.js" defer></script>
+<script src="data/qa-mold.js" defer></script>
+<script src="data/qa-design.js" defer></script>
+<script src="data/qa-drawing.js" defer></script>
+<script src="data/qa-surface.js" defer></script>
+<script src="data/qa-optic.js" defer></script>
+<script src="data/qa-thermal.js" defer></script>
+<script src="data/qa-safety.js" defer></script>
+<script src="data/qa-test.js" defer></script>
+<script src="data/qa-pack.js" defer></script>
+<script src="data/qa-cost.js" defer></script>
+
+<!-- ══ 框架层：通用，与业务无关 ══ -->
+<script src="core/dom.js" defer></script>
+<script src="core/schema.js" defer></script>
+<script src="core/store.js" defer></script>
+<script src="core/storage.js" defer></script>
+<script src="core/validate.js" defer></script>
+
+<!-- ══ 契约与后台 ══ -->
+<script src="data/manifest.js" defer></script>
+<script src="admin/fields.js" defer></script>
+<script src="admin/editors.js" defer></script>
+<script src="admin/admin.js" defer></script>
+</body>
+</html>

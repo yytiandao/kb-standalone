@@ -1,0 +1,19 @@
+# 构建产物与依赖
+dist/
+node_modules/
+
+# standards/ 标准子站（424MB，本地保留使用，不入库不上线）
+standards/
+
+# 历史归档与临时测试文件
+_archive/
+_testfiles/
+_tmp-*.js
+
+# 旧版个人收款码（全项目无引用，不应公开）
+images/qr-alipay.jpg
+images/qr-wechat.jpg
+
+# 系统杂项
+Thumbs.db
+.DS_Store

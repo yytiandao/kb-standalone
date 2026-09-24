@@ -1,0 +1,80 @@
+/* ============================================================
+ * sw.js —— Service Worker：让知识库在离线/弱网下也能打开
+ *
+ * 策略（按资源类型分开处理，避免「页面是新的、脚本是旧的」错位）：
+ *   · 页面导航 / 脚本 / 样式 / 数据  → network-first
+ *       在线时永远取最新（走 HTTP 协商缓存，没变就是 304，很快）；
+ *       断网时回退到上次缓存，照常能用
+ *   · 图片（jpg/png/svg...）        → cache-first
+ *       图片内容基本不变且数量多，命中缓存直接秒出
+ *   · 跨域资源（B站 / 访问统计）     → 不接管
+ * ============================================================ */
+const CACHE = "struct-kb-v30";
+/* 预缓存只放「首屏必需且不大」的几个：页面骨架、样式、数据层与应用层。
+   其余（data/qa-*.js、kb-step-view.js、图片）一律走下面的网络优先/缓存优先策略按需缓存。 */
+const CORE = ["./", "./index.html", "./site.css", "./app.js",
+  "./data/site.js", "./data/items.js", "./data/items-side.js", "./data/img.js", "./data/syn.js",
+  "./data/proc.js", "./data/gloss.js", "./data/field.js", "./data/tools.js", "./data/formula.js",
+  "./data/cases.js", "./data/select.js", "./data/template.js", "./data/changelog.js",
+  "./data/qa-meta.js", "./images/qr-site.svg", "./favicon.svg"];
+/* wasm 与图片一样走缓存优先：解析引擎 7.6 MB，不该每次访问都重新验证。
+   它刻意不放进 CORE —— 首屏不会下载，只有真正打开 STEP 模块时才拉取。 */
+const IMG = /\.(jpe?g|png|gif|webp|svg|ico|bmp|avif|wasm)$/i;
+
+self.addEventListener("install", e => {
+  e.waitUntil(
+    caches.open(CACHE)
+      .then(c => c.addAll(CORE))
+      .catch(() => {})                 // 单个资源失败不影响安装
+      .then(() => self.skipWaiting())
+  );
+});
+
+self.addEventListener("activate", e => {
+  e.waitUntil(
+    caches.keys()
+      .then(ks => Promise.all(ks.filter(k => k !== CACHE).map(k => caches.delete(k))))
+      .then(() => self.clients.claim())
+  );
+});
+
+function put(req, res) {
+  if (res && res.status === 200 && (res.type === "basic" || res.type === "default")) {
+    const copy = res.clone();
+    caches.open(CACHE).then(c => c.put(req, copy)).catch(() => {});
+  }
+  return res;
+}
+
+self.addEventListener("fetch", e => {
+  const req = e.request;
+  if (req.method !== "GET") return;
+  let url;
+  try { url = new URL(req.url); } catch (err) { return; }
+  if (url.origin !== self.location.origin) return;   // 跨域不接管
+  if (url.pathname.endsWith("/sw.js")) return;       // 别缓存 SW 自己
+
+  // ① 图片：缓存优先
+  if (IMG.test(url.pathname)) {
+    e.respondWith(
+      caches.match(req).then(hit => hit || fetch(req).then(res => put(req, res)).catch(() => hit))
+    );
+    return;
+  }
+
+  // ② 页面与脚本：网络优先，断网回退缓存
+  /* ⚠️ 这里必须带 cache:"no-cache"：数据文件是用后台改完直接替换的，
+     而静态托管（含本机 python http.server）通常不发 Cache-Control，
+     浏览器就会按 Last-Modified 做「启发式缓存」——刚替换的文件可能几十分钟内
+     仍返回旧内容，表现为「改了却看不到」。no-cache 表示仍走协商缓存
+     （没变就是 304，不浪费流量），但每次都必须向服务器确认一次。 */
+  e.respondWith(
+    fetch(req, { cache: "no-cache" }).then(res => put(req, res)).catch(() =>
+      caches.match(req).then(hit => {
+        if (hit) return hit;
+        if (req.mode === "navigate") return caches.match("./index.html");
+        return Response.error();
+      })
+    )
+  );
+});
