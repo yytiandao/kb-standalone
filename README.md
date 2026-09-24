@@ -20,6 +20,7 @@
 node serve.js          # 本地预览 http://127.0.0.1:8124
 node content-check.js  # 内容门禁（改数据后必跑）
 node release.js build  # 生成 dist/ 生产目录
+node kb.js --help      # 查询 CLI：stats / schema / search / get / qa（AI 维护工具入口）
 ```
 
 - 数据在 `data/*.js`（内容与代码分离），可用 `admin.html` 后台编辑后导出替换

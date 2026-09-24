@@ -126,7 +126,8 @@ function runCheck() {
 
 /* ── 构建 dist/ ── */
 const EXCLUDE = new Set([
-  'content-check.js', 'qa-check.js', 'release.js', 'serve.js',   // 维护脚本
+  'content-check.js', 'qa-check.js', 'release.js', 'serve.js', 'kb.js',   // 维护脚本
+  'AGENTS.md',                                         // 给 AI 工具的项目说明，不进线上
   'deploy',                                            // 部署文档，不进线上
   'README.md',                                         // 仓库说明，不进线上
   '使用说明.txt', '功能测试用例.md', '功能测试用例.csv',   // 本地文档，不进线上
