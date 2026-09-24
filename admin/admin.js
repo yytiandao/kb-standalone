@@ -523,5 +523,9 @@ window.KBAdmin = window.KBAdmin || {};
   A.start = start;
   A.validateTable = validateTable;
   A.renderAll = renderAll;
-  window.addEventListener("DOMContentLoaded", start);
+  /* 登录门禁（admin/auth.js）：通过后才启动后台；没引 auth.js 时直接启动 */
+  window.addEventListener("DOMContentLoaded", function () {
+    if (window.KBAuth) KBAuth.gate().then(start);
+    else start();
+  });
 })(window.KBAdmin);

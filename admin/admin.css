@@ -145,3 +145,23 @@ a { color: var(--primary); }
 .kb-toast.on { transform: translateX(-50%) translateY(0); }
 .kb-toast.ok { background: var(--ok-strong); }
 .kb-toast.err { background: var(--danger); }
+
+/* ── 登录门禁（admin/auth.js）── */
+.af-login {
+  position: fixed; inset: 0; z-index: 99; display: flex; align-items: center; justify-content: center;
+  background: var(--bg);
+}
+.af-login-card {
+  width: min(320px, 90vw); background: var(--card); border: 1px solid var(--border);
+  border-radius: var(--r-md); box-shadow: var(--shadow); padding: 26px 24px;
+  display: flex; flex-direction: column; gap: var(--sp-4);
+}
+.af-login-title { font-size: var(--fs-md); font-weight: 700; text-align: center; margin-bottom: 2px; }
+.af-login-card input {
+  font-family: inherit; font-size: var(--fs-sm); padding: 8px 11px;
+  border: 1px solid var(--border); border-radius: var(--r-sm); background: var(--bg); color: var(--text);
+}
+.af-login-card input:focus { outline: none; border-color: var(--primary); }
+.af-login-card .af-btn { width: 100%; padding: 8px; font-size: var(--fs-sm); }
+.af-login-msg { font-size: var(--fs-xs); color: var(--warn-tx); min-height: 1.3em; text-align: center; }
+.af-login-note { font-size: var(--fs-caption); color: var(--sub); text-align: center; }
