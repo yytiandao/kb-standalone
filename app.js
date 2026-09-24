@@ -2419,8 +2419,8 @@ const CLICK_RULES = [
       return true; } },
   { sel: ".gc-item[data-rel]", fn(el, e){
       e.preventDefault(); openItemByName(el.dataset.rel); return true; } },
-  /* 关联跳转的三个宿主：详情/图库的 chip、学习地图的条目、对比卡的标题（原先漏了最后一个，点了没反应） */
-  { sel: ".rel-chip[data-rel], .map-item[data-rel], .cmp-name[data-rel]", fn(el, e){
+  /* 关联跳转的两个宿主：详情/图库的 chip、对比卡的标题（原先漏了最后一个，点了没反应） */
+  { sel: ".rel-chip[data-rel], .cmp-name[data-rel]", fn(el, e){
       e.preventDefault(); openItemByName(el.dataset.rel); return true; } },
   /* 图片放大（主图 / 参考图集 / 图库通用） */
   { sel: ".ref-card[data-ref], .gw-card[data-ref], .img-preview img, .img-btn[data-img] img", fn(el, e){

@@ -324,17 +324,6 @@ window.KB_MANIFEST = [
     note: "带表单字段的模板（NPI 流程 / DFM 检讨表）。"
   },
   {
-    key: "KB_MAP", file: "map.js", fileTitle: "学习地图",
-    group: "ref", label: "学习地图", editor: "json",
-    note: "按层组织的学习路径，每层下是知识点条目与「为什么学」。"
-  },
-  {
-    key: "KB_MAP_CAP", file: "map.js", fileTitle: "学习地图",
-    group: "ref", label: "学习地图·学完你能", editor: "map",
-    value: { kind: "text" },
-    note: "键是「领域id|层序号」，值是一句「这一层学完你能做到什么」。"
-  },
-  {
     key: "KB_SYN", file: "syn.js", fileTitle: "搜索同义词",
     group: "ref", label: "搜索同义词", editor: "json",
     note: "同义词组，每组至少两个词（英文与中文同行）。术语词典的英中对照已在整合时并入这里。"

@@ -14,9 +14,7 @@
  *   · manifest.webmanifest 的图标存在
  *
  * build 的生产目录排除：admin.html、admin/、core/（仅后台用）、维护脚本、
- * 测试文档、_archive、_testfiles、内嵌 git 副本、deploy/（部署文档）、
- * 点开头文件（.nojekyll 除外，GitHub Pages 需要）。
- * 另有零散文件级排除（EXCLUDE_FILES，如无引用的收款码图片）。
+ * deploy/ 与 README.md（仓库文档）、本地说明文档、点开头文件（.nojekyll 除外）。
  * standards/ 子站（424MB，主站无链接）默认不复制，需要时自行同步。
  * ══════════════════════════════════════════════════════════════════════ */
 const fs = require('fs');
@@ -128,22 +126,15 @@ function runCheck() {
 const EXCLUDE = new Set([
   'admin.html', 'admin', 'core',                      // 后台与仅后台用的框架层
   'content-check.js', 'qa-check.js', 'release.js', 'serve.js',   // 维护脚本
-  '_archive', '_testfiles', '_tmp-std2.js', '_tmp-tags.js',
-  'kb-standalone',                                     // 内嵌 git 副本
   'deploy',                                            // 部署文档，不进线上
   'README.md',                                         // 仓库说明，不进线上
-  '使用说明.txt', '功能测试用例.md', '功能测试用例.csv', '993',
+  '使用说明.txt', '功能测试用例.md', '功能测试用例.csv',   // 本地文档，不进线上
   'standards'                                           // 424MB 独立子站，另行同步
-]);
-/* 文件级排除（相对路径，/ 分隔）：全项目无引用、不应公开上网的零散文件 */
-const EXCLUDE_FILES = new Set([
-  'images/qr-alipay.jpg', 'images/qr-wechat.jpg'       // 旧版个人收款码
 ]);
 function copyDir(srcDir, dstDir) {
   fs.mkdirSync(dstDir, { recursive: true });
   fs.readdirSync(srcDir, { withFileTypes: true }).forEach(e => {
     const s = path.join(srcDir, e.name), d = path.join(dstDir, e.name);
-    if (EXCLUDE_FILES.has(path.relative(DIR, s).replace(/\\/g, '/'))) return;
     if (e.isDirectory()) copyDir(s, d);
     else fs.copyFileSync(s, d);
   });
