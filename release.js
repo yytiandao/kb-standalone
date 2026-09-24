@@ -131,6 +131,7 @@ const EXCLUDE = new Set([
   '_archive', '_testfiles', '_tmp-std2.js', '_tmp-tags.js',
   'kb-standalone',                                     // 内嵌 git 副本
   'deploy',                                            // 部署文档，不进线上
+  'README.md',                                         // 仓库说明，不进线上
   '使用说明.txt', '功能测试用例.md', '功能测试用例.csv', '993',
   'standards'                                           // 424MB 独立子站，另行同步
 ]);

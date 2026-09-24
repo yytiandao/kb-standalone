@@ -1,2 +1,7 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# STEP 解析引擎按字节原样入库：VENDOR.json 锁了这些文件的 SHA-256，
+# 任何换行符归一化都会改写字节导致校验失败（CI/克隆后与本地不一致）
+vendor/occt/** -text
+*.wasm binary
